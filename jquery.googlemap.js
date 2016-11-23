@@ -338,7 +338,7 @@ $(function() {
 	    		}($(this));
 		} else {
 			var request = {
-				origin: params.start,
+                origin: new google.maps.LatLng(params.start[0], params.start[1]),
 				destination: new google.maps.LatLng(params.end[0], params.end[1]),
 				travelMode: google.maps.DirectionsTravelMode.DRIVING,
 				region: "fr",
